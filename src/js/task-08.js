@@ -14,15 +14,16 @@ function mainSubmit(event) {
       return alert("Please fill in all the fields!");
      }
   
-  const user = {
-    elements: {
-      email: email.value,
-      password: password.value
-    }
-  }
+  // const user = {
+  //   elements: {
+  //     email: email.value,
+  //     password: password.value
+  //   }
+  // }
   
    
-    console.log(user.elements);  
+    // console.log(user.elements);  
+  console.log(`login: ${email.value}, pas: ${password.value}`)
 
   event.currentTarget.reset();
 }

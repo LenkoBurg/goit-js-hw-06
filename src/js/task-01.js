@@ -1,19 +1,13 @@
-const arrCategory = document.querySelectorAll('#categories .item')
+const listWithClass = document.querySelectorAll('.item');
+console.log('Number of categories:', listWithClass.length);
+console.log('');
 
+listWithClass.forEach(item => {
+    const titleListWithClass = item.querySelector("h2");
+    console.log('Category:', titleListWithClass.textContent);
 
-console.log('Number of categories:', arrCategory.length)
+    const itemsListWithClass = item.querySelectorAll("li");
+    console.log('Elements:', itemsListWithClass.length);
 
-console.log(' ')
-
-console.log('Category:', arrCategory[0].querySelector('h2').textContent)
-console.log('Elements:', arrCategory[0].querySelectorAll('ul li').length)
-
-console.log(' ')
-
-console.log('Category:', arrCategory[1].querySelector('h2').textContent)
-console.log('Elements:', arrCategory[1].querySelectorAll('ul li').length)
-
-console.log(' ')
-
-console.log('Category:', arrCategory[2].querySelector('h2').textContent)
-console.log('Elements:', arrCategory[2].querySelectorAll('ul li').length)
+    console.log('');
+})
