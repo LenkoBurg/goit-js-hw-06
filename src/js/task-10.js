@@ -4,8 +4,6 @@ function getRandomHexColor() {
 
 const controlMenu = document.querySelector('#controls')
 const boxContainer = document.querySelector('#boxes')
-let contr = 30;
-
 
 
 const createBoxes = (amount) => {
